@@ -1,0 +1,22 @@
+.navigation__container {
+  display: flex;
+  background-color: #0075d8;
+  border-radius:  0 0 5px 5px;
+  color: white;
+  padding: 0 5px;
+}
+
+.navigation__list {
+  display: flex;
+  justify-content: space-around;
+  list-style: none;
+}
+
+.navigation__list__item {
+  padding: 0 25px;
+}
+
+.navigation__list__item a  {
+  color: white;
+  text-decoration: none;
+}

@@ -1,0 +1,9 @@
+{{outlet}}
+
+{{nav-bar}}
+<h1>Post list</h1>
+
+{{#each allPosts as |post|}}
+  <h3>{{post.title}}</h3>
+  <p>{{post.content}}</p>
+{{/each}}

@@ -1,0 +1,20 @@
+{{outlet}}
+{{nav-bar}}
+
+<div class="form__container">
+  <h1>Create a new post</h1>
+
+  <form>
+    <div class="post__form-group">
+        <label for="title">Title</label>
+        {{input value=titleName name="title" type="text" class="post__form__field form__field__title"}}
+    </div>
+    <div>
+        <label for="content">Content</label>
+        {{textarea value=contentName name="content" cols="30" rows="10" class="post__form__field form__field__content"}}
+    </div>
+    <div>
+      <button {{action 'savePost'}} class="post__form__button post__form__button--save">Save</button>
+    </div>
+  </form>
+</div>

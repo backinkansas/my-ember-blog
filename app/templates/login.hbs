@@ -1,1 +1,16 @@
 {{outlet}}
+<div class="login__container">
+  <div class="login__header">
+    <img src="assets/images/user.png" alt="Avatar de um usuário">
+    <p class="login__title">Login</p>
+  </div>
+  <form onsubmit={{action 'login'}} class="login__form">
+    {{input type="email" value=email placeholder="Email" class="login__form__field form__field__email"}}
+    {{input type="password" value=password placeholder="Senha" class="login__form__field form__field__password"}}
+
+    {{#if hasError}}
+      <p>{{errorMessage}}</p>
+    {{/if}}
+    {{input type="submit" value="Login"class="login__form__button"}}
+  </form>
+</div>
