@@ -17,6 +17,12 @@ export default Controller.extend({
       this.set('titleName', '')
       this.set('contentName', '')
       return this.transitionToRoute('post-list')
+    },
+
+    cancelCreation() {
+      this.set('titleName', '')
+      this.set('contentName', '')
+      return
     }
   },
 });

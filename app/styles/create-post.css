@@ -15,17 +15,22 @@
 
 .post__form__button {
   position: absolute;
-  right: 405px;
   width: 10%;
   color: #ffffff;
   font-weight: bold;
   font-size: 1em;
   padding: 10px;
-  margin: 55px 0 50px;
   border-radius: 5px;
   border: 0;
+  margin: 55px 0 50px;
 }
 
 .post__form__button--save {
   background-color: #5cb85c;
+  right: 405px;
+}
+
+.post__form__button--cancel {
+  background-color: #d9534f;
+  right: calc(50% - 115px);
 }

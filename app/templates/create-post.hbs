@@ -14,6 +14,7 @@
         {{textarea value=contentName name="content" cols="30" rows="10" class="post__form__field form__field__content"}}
     </div>
     <div>
+      <button {{action 'cancelCreation'}} class="post__form__button post__form__button--cancel">Cancel</button>
       <button {{action 'savePost'}} class="post__form__button post__form__button--save">Save</button>
     </div>
   </form>
