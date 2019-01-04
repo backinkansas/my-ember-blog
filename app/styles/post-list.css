@@ -1,0 +1,30 @@
+.posts__container {
+  width: 60vw;
+  margin: 100px auto;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  align-content: space-between;
+}
+
+.posts__card {
+  border: 1px solid #e0e0e0;
+  width: 40%;
+  padding: 10px 20px;
+  margin-bottom: 30px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.posts__card__viewBtn {
+  width: 30%;
+  background-color: #0075d8;
+  color: #ffffff;
+  font-weight: bold;
+  font-size: 1em;
+  padding: 10px;
+  border-radius: 5px;
+  border: 0;
+  margin-left: calc(100% - 90px);
+}

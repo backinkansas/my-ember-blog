@@ -1,5 +1,6 @@
 @import './login.css';
 @import './create-post.css';
+@import './post-list.css';
 @import './components/nav-bar.css';
 
 body {

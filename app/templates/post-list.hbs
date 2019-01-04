@@ -1,9 +1,15 @@
 {{outlet}}
 
 {{nav-bar}}
-<h1>Post list</h1>
+<div class="posts__container">
+  {{#each allPosts as |post|}}
+    <div class="posts__card">
+      <div class="posts__card__singlePost">
+        <h3>{{post.title}}</h3>
+        <p class="posts__card__content">{{post.content}}</p>
+      </div>
+      <button class="posts__card__viewBtn">Visualizar</button>
+    </div>
+  {{/each}}
+</div>
 
-{{#each allPosts as |post|}}
-  <h3>{{post.title}}</h3>
-  <p>{{post.content}}</p>
-{{/each}}

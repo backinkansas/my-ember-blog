@@ -8,7 +8,6 @@ export default Route.extend(authenticatedRouteMixin, {
   async model() {
     const service = this.get('posts');
     const allPosts = await service.getPosts()
-    console.log(allPosts)
     return allPosts
   }
 });
